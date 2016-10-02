@@ -8,6 +8,7 @@ develop
 ### Fixes
 
 - Fix an issue find string is not shared with other applications after quitting CotEditor.
+- Fix an issue where page guide remained after toggling page guide visibility.
 
 
 

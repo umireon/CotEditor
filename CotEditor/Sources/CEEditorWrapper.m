@@ -535,7 +535,7 @@
     
     [[self splitViewController] enumerateEditorViewsUsingBlock:^(CEEditorViewController * _Nonnull viewController) {
         [[viewController textView] setShowsPageGuide:showsPageGuide];
-        [[viewController textView] setNeedsDisplayInRect:[[viewController textView] visibleRect] avoidAdditionalLayout:YES];
+        [[viewController textView] setNeedsDisplayInRect:[[viewController textView] bounds] avoidAdditionalLayout:YES];
     }];
     [[[self windowController] toolbarController] toggleItemWithTag:CEToolbarShowPageGuideItemTag
                                                              setOn:showsPageGuide];
